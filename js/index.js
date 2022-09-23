@@ -5,7 +5,7 @@ const gameDiv = document.querySelector(".game-div");
 const announcer = document.querySelector(".announce");
 
 let board = ['', '', '', '', '', '', '', '', ''];
-let nextMove = "Red";
+let nextMove = "Player";
 let isGameActive = true;
 
 const winningConditions = [
@@ -57,8 +57,8 @@ if (!board.includes(''))
 //Changes player name
 function changePlayer() {
     announcer.classList.remove(`player-${nextMove}`);
-    nextMove = nextMove === "Red" ? "Yellow" : "Red";
-    announcer.innerText = `Player ${nextMove}'s Turn`;
+    nextMove = nextMove === "Player" ? "Computer" : "Player";
+    announcer.innerText = `${nextMove}'s Turn`;
 };
 
 //After click action --> start game
@@ -69,6 +69,11 @@ function userAction (tile, index) {
         changePlayer();
         checkResult();
     };
+};
+
+// AI Brain
+function minimax() {
+    return
 };
 
 // Main Script
