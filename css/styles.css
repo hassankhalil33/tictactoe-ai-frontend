@@ -47,13 +47,13 @@ section {
     margin: 5px;
 }
 
-.player-Red {
+.player-Player {
     background: url("../images/red.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.player-Yellow {
+.player-Computer {
     background: url("../images/yellow.png");
     background-repeat: no-repeat;
     background-size: contain;

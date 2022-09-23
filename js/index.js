@@ -44,8 +44,7 @@ function checkResult() {
 
     if (roundWon) {
         changePlayer();
-        announcer.innerText = `Player ${nextMove} Won!`;
-        console.log("Im Here");
+        announcer.innerText = `${nextMove} Won!`;
         isGameActive = false;
         return;
     };
